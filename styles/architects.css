@@ -39,10 +39,11 @@ main{
     margin: 0 auto;
 
 }
+/* shared styles ended*/
 
 
 
-
+/* navbar related styles */
 .navbar{
 
     justify-content: space-between;
@@ -120,6 +121,9 @@ main{
 }
 
 
+/* navbar related styles ended */
+
+
 
 /* quicklist related styles*/
 .quicklist{
@@ -140,8 +144,11 @@ main{
     font-size: 3rem;
 }
 .quicklist-text{
+    
+    /* border: 1px solid black; */
     margin-left: 130px;
     max-width: 530px;
+    
 }
 .quick-list{
     font-weight: 500;
@@ -152,4 +159,63 @@ main{
 }
 .features{
     color: #FF900E;
+}
+/* quicklist related styles ended*/
+
+
+
+
+
+
+
+
+/* for mobile */
+@media screen and (max-width: 576px) {
+    .navbar, .banner, .quicklist{
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .quicklist-text{
+       margin: auto;
+       max-width: 300px;
+    }
+
+    .quicklist-images{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Fact style start */
+.fact-container{
+   
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+
+    
+}
+.fact{
+    border: 1px solid orange;
+    max-width: 250px;
+    max-height: 250px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+
+
+}
+.fact-image{
+    max-width: 2.75rem;
+    max-height: 2.75rem;
+}
+.fact-heading{
+    font-size: 3rem;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.fact-subheading{
+    font-size: 1.25rem;
+    font-weight: 600;
 }
